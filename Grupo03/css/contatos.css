@@ -1,4 +1,5 @@
 body{
+    background-color: rgb(249, 215, 232);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -6,12 +7,18 @@ body{
 }
 
 .contatos{
+    color: rgb(249, 215, 232);
     display: flex;
     justify-content: center;
-    background-color: cyan;
+    background-color: rgb(31, 137, 255);
     border-style: solid;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     border-color: black;
+}
+
+.cor_fundo{
+    color: #000000;
+    background-color:rgb(152, 194, 245);
 }
 
 .coluna_ctt{
@@ -20,28 +27,56 @@ body{
     align-items: center;
     border-style: solid;
     border-color: black;
-    border-radius: 7px;
-    background-color: cyan;
+    border-radius: 0.5rem;
+    background-color: rgb(152, 194, 245);
+}
+
+.coluna_ctt1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right-style: solid;
+    border-right-color: black;
+    background-color: rgb(152, 194, 245);
+    padding: 2%;
+}
+
+.coluna_ctt2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    background-color: rgb(152, 194, 245);
+}
+
+.coluna_ctt3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left-style: solid;
+    border-left-color: black;
+    padding: 2%;
+    background-color: rgb(152, 194, 245);
 }
 
 .linha_ctt{
     display: flex;
     flex-direction: row;
-    justify-content: first baseline;
+    justify-content: initial;
     align-items: center;
     width: 100%;
     border-top: solid;
     border-color: black;
-    background-color: cyan;
+    background-color: rgb(152, 194, 245);
 }
 
 .linha_paciente{
     display: flex;
     flex-direction: row;
-    justify-content: first baseline;
+    justify-content: initial;
     align-items: center;
     width: 100%;
-    background-color: blueviolet;
+    background-color: rgba(118, 179, 118, 0.7);
 }
 
 .linha_normal{
@@ -87,6 +122,11 @@ a:link {
     text-decoration: none;
 }
 
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
 .paula{
     width: 5rem;
     height: 5rem;
@@ -97,9 +137,9 @@ a:link {
 
 .fonte{
     color:#000000;
-    border: 2.5px solid #000000;
-    background-color: #7ee3ff;
-    border-radius: 5px;
+    border: 1rem solid #000000;
+    background-color: rgb(152, 194, 245);
+    border-radius: 1rem;
     justify-content: center;
     display: flex;
     font-size: x-large;
@@ -127,23 +167,14 @@ li{
     margin: 0rem;
 }
 
-.atencao{
-    display: flex;
-    justify-content: center;
-    border-style: solid;
-    border-color: black;
-    border-radius: 7px;
-    background-color: red;
-    padding: 0.5%;
-}
 
 .linha{
     display: flex;
     flex-direction: row;
     border-color: black;
-    background-color: cyan;
+    background-color: rgb(152, 194, 245);
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 1rem;
     align-items: center;
 }
 
@@ -159,25 +190,19 @@ li{
 .img{
     width: 6.4rem;
     height: 6.4rem;
-    padding: 2%;
-    border-right: solid;
-    border-color: black;
 }
 
-.img1{
-    width: 6.4rem;
-    height: 6.4rem;
-    padding: 2%;
-    border-color: black;
-}
 
 .linha_ctt1{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     border-color: black;
-    background-color: cyan;
+    background-color: rgb(152, 194, 245);
+    border-style: solid;
+    border-radius: 2rem;
 }
 
 .centro{
@@ -198,13 +223,13 @@ li{
     display: flex;
     justify-content: end;
     margin-right: 0.5rem;
-    background-color: cyan;
+    background-color: rgb(152, 194, 245);
     border-style: solid;
     border-color: #000000;
     border-top-left-radius: 20%;
     border-bottom-left-radius: 20%;
     margin-right: -0.01rem;
-    padding: 2px;
+    padding: 0.5rem;
 }
 
 .img3{
@@ -213,13 +238,13 @@ li{
     display: flex;
     justify-content: end;
     margin-right: 0.5rem;
-    background-color: cyan;
+    background-color: rgb(152, 194, 245);
     border-style: solid;
     border-color: #000000;
     border-left: none;
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%;
-    padding: 2px;
+    padding: 0.5rem;
 }
 
 .linha_normal{
@@ -230,4 +255,65 @@ li{
 .roda_esq{
     display: flex;
     justify-content: left;
+}
+
+.container {
+    display: grid;
+    justify-items: center;
+    
+    grid-template-columns: repeat(3,1fr);
+    padding: 0.5rem;
+}
+.item {
+    width: 6rem;
+    height: 6rem;
+    padding: 0.5rem;
+    background-color: rgb(152, 194, 245);
+    text-align: center;
+    border-style: solid;
+}
+
+.item_top_esq {
+    width: 6rem;
+    height: 6rem;
+    padding: 0.5rem;
+    background-color: rgb(152, 194, 245);
+    text-align: center;
+    border-style: solid;
+    border-top-left-radius: 0.5rem;
+}
+
+.item_top_dir {
+    width: 6rem;
+    height: 6rem;
+    padding: 0.5rem;
+    background-color: rgb(152, 194, 245);
+    text-align: center;
+    border-style: solid;
+    border-top-right-radius: 0.5rem;
+}
+
+.item_bottom_esq {
+    width: 6rem;
+    height: 6rem;
+    padding: 0.5rem;
+    background-color: rgb(152, 194, 245);
+    text-align: center;
+    border-style: solid;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.item_bottom_dir {
+    width: 6rem;
+    height: 6rem;
+    padding: 0.5rem;
+    background-color: rgb(152, 194, 245);
+    text-align: center;
+    border-style: solid;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.linha_rodape{
+    display: flex;
+    flex-direction: row;
 }

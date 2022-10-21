@@ -1,4 +1,5 @@
 body{
+    background-color: rgb(249, 215, 232);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -6,11 +7,12 @@ body{
 }
 
 .header{
+    color:rgb(249, 215, 232);
     display: flex;
     justify-content: center;
-    background-color: cyan;
+    background-color: rgb(31, 137, 255);
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     border-color: black;
 }
 
@@ -27,6 +29,11 @@ h1,h2{
 
 .p2{
     padding-left: 1.5rem;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
 }
 
 ul{
@@ -84,9 +91,9 @@ main{
     margin-bottom: 0rem;
     display: flex;
     justify-content:left;
-    background-color: cyan;
+    background-color: rgb(152, 194, 245);
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 0.7rem;
     border-color: black;
     align-items: center;
     color: #000000;
@@ -99,9 +106,9 @@ main{
     margin-top: .8rem;
     display: flex;
     justify-content:left;
-    background-color: cyan;
+    background-color: rgb(152, 194, 245);
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 0.7rem;
     border-color: black;
     align-items: center;
     color: #000000;
@@ -124,10 +131,10 @@ main{
     height: 1vw;
     display: flex;
     justify-content:center;
-    background-color: cyan;
+    background-color: rgb(152, 194, 245);
     border-style: solid;
     border-width: .1rem;
-    border-radius: 5px;
+    border-radius: 0.35rem;
     border-color: black;
     align-items: center;
     color: #000000;
@@ -165,4 +172,45 @@ main{
 .roda_esq{
     display: flex;
     justify-content: left;
+}
+
+.linha_tarefas{
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    align-items: center;
+    width: 100%;
+    border-top: solid;
+    border-color: black;
+    background-color: rgb(152, 194, 245);
+}
+
+.linha_tarefas1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: initial;
+    width: 100%;
+    border-color: black;
+    background-color: rgb(152, 194, 245);
+    border-radius: 1rem;
+}
+
+.coluna_tarefas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.4rem;
+    background-color: rgb(152, 194, 245);
+}
+
+.borda_tarefas{
+    border-left: solid;
+    border-color: black;
+}
+
+h4{
+    margin: 1rem;
 }
