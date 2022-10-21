@@ -12,9 +12,12 @@ body{
     display: flex;
     justify-content: center;
     background-color: rgb(31, 137, 255);
+    border: #000000;
     border-style: solid;
     border-radius: 0.5rem;
     border-color: black;
+    margin: 0.7rem;
+    padding: 0.2rem;
 }
 
 .cor_fundo{
@@ -26,10 +29,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 0.25rem;
     border-style: solid;
     border-color: black;
     border-radius: 0.5rem;
     background-color: rgb(152, 194, 245);
+    margin: 0.7rem;
 }
 
 .coluna_ctt1{
@@ -84,6 +89,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0.1rem;
 }
 
 .perfil{
@@ -104,6 +110,7 @@ body{
 
 .size_num{
     font-size: large;
+    padding: .8rem;
 }
 
 .img_rodape{
@@ -111,7 +118,7 @@ body{
     height: 4rem;
     display: flex;
     justify-content: end;
-    margin-right: 0.5rem;
+    margin-left: 15%;
 }
 
 .img_rodape_dir{
@@ -136,6 +143,7 @@ a{
 .paula{
     width: 5rem;
     height: 5rem;
+    margin: 0.5rem;
     margin-left: auto;
     margin-right: auto; 
     display: block;
@@ -229,6 +237,7 @@ li{
 .foto{
     width: 15rem;
     height: 15rem;
+    margin: 2rem;
 }
 
 .img2{
@@ -238,6 +247,7 @@ li{
     justify-content: end;
     margin-right: 0.5rem;
     background-color: rgb(152, 194, 245);
+    border: 0.2rem;
     border-style: solid;
     border-color: #000000;
     border-top-left-radius: 20%;
@@ -253,6 +263,7 @@ li{
     justify-content: end;
     margin-right: 0.5rem;
     background-color: rgb(152, 194, 245);
+    border: 0.2rem;
     border-style: solid;
     border-color: #000000;
     border-left: none;
@@ -284,6 +295,8 @@ li{
     padding: 0.5rem;
     background-color: rgb(152, 194, 245);
     text-align: center;
+    border-color: #000000;
+    border: 0.2rem;
     border-style: solid;
 }
 
@@ -292,6 +305,7 @@ li{
     height: 6rem;
     padding: 0.5rem;
     background-color: rgb(152, 194, 245);
+    border: 0.2rem;
     text-align: center;
     border-style: solid;
     border-top-left-radius: 0.5rem;
@@ -303,6 +317,7 @@ li{
     padding: 0.5rem;
     background-color: rgb(152, 194, 245);
     text-align: center;
+    border: 0.2rem;
     border-style: solid;
     border-top-right-radius: 0.5rem;
 }
@@ -312,6 +327,7 @@ li{
     height: 6rem;
     padding: 0.5rem;
     background-color: rgb(152, 194, 245);
+    border: 0.2rem;
     text-align: center;
     border-style: solid;
     border-bottom-left-radius: 0.5rem;
@@ -323,6 +339,7 @@ li{
     padding: 0.5rem;
     background-color: rgb(152, 194, 245);
     text-align: center;
+    border: 0.2rem;
     border-style: solid;
     border-bottom-right-radius: 0.5rem;
 }

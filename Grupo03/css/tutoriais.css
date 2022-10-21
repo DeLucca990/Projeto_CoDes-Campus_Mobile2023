@@ -12,9 +12,12 @@ body{
     display: flex;
     justify-content: center;
     background-color: rgb(31, 137, 255);
+    border: #000000;
     border-style: solid;
     border-radius: 0.5rem;
     border-color: black;
+    margin: 0.7rem;
+    padding: 0.2rem;
 }
 
 
@@ -25,10 +28,10 @@ body{
     display: flex;
     justify-content: left;
     background-color:  rgb(152, 194, 245);
+    border: #000000;
     border-style: solid;
     border-radius: 1rem;
-    border-color: black;
-    margin-left: 2rem;
+    margin-left: 5%;
     align-items: center;
     padding-left: 1rem;
     position: relative;
@@ -42,10 +45,11 @@ body{
     display: flex;
     justify-content:right;
     background-color:  rgb(152, 194, 245);
+    border: #000000;
     border-style: solid;
     border-radius: 1rem;
     border-color: black;
-    margin-left: 5rem;
+    margin-right: 5%;
     align-items: center;
     padding-left: 1rem;
     margin-top: 1rem;
@@ -61,14 +65,14 @@ body{
     display: flex;
     justify-content: left;
     background-color:  rgb(152, 194, 245);
+    border: #000000;
     border-style: solid;
     border-radius: 1rem;
     border-color: black;
-    margin-left: 2rem;
+    margin-left: 5%;
     align-items: center;
     padding-left: 1rem;
     position: relative;
-    color: #000000;
 }
 
 a:link {
@@ -136,7 +140,8 @@ li{
     height: 4rem;
     display: flex;
     justify-content: end;
-    margin-right: 0.5rem;   
+    margin-right: 0.5rem;
+    margin-left: 2%;   
 }
 
 .trespontinhos_direita{
@@ -155,4 +160,8 @@ li{
     bottom: -1.5rem;
     left: 12.5rem;
     padding: 0.7rem;
+}
+
+.margem{
+    margin: 2%;
 }

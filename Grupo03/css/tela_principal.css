@@ -71,6 +71,7 @@ ul {
 .linha {
     display: flex;
     flex-direction: row;
+    padding: 0rem;
 }
 
 .margem{
@@ -85,6 +86,7 @@ ul {
     display: flex;
     justify-content:right;
     background-color: rgb(152, 194, 245);
+    border: #000000;
     border-style: solid;
     border-radius: 1rem;
     border-color: black;
@@ -100,6 +102,7 @@ ul {
     display: flex;
     justify-content: left;
     background-color: rgb(152, 194, 245);
+    border: #000000;
     border-style: solid;
     border-radius: 1rem;
     border-color: black;
@@ -113,12 +116,14 @@ ul {
     display: flex;
     justify-content: right;
     margin-bottom: 10%;
+    margin-right: 5%;
 }
 
 .joga_esq{
     display: flex;
     justify-content: left;
     margin-bottom: 10%;
+    margin-left: 5%;
 }
 
 .img_rodape_options{
@@ -128,6 +133,7 @@ ul {
     justify-content: end;
     margin-right: 0.5rem;
     background-color: rgb(152, 194, 245);
+    border: #000000;
     border-style: solid;
     border-color: #000000;
     border-top-left-radius: 20%;
@@ -142,6 +148,7 @@ ul {
     justify-content: end;
     margin-right: 0.5rem;
     background-color: rgb(152, 194, 245);
+    border: #000000;
     border-style: solid;
     border-color: #000000;
     border-left: none;
@@ -157,6 +164,7 @@ ul {
 .linha_normal{
     display: flex;
     flex-direction: row;
+    margin-left: 2%;
 }
 
 .trespontinhos_direita{
