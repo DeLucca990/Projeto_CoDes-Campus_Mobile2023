@@ -4,18 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tela_principal.css">
+    
     <title>Tela Principal</title>
 </head>
 <body>
-    <img src="https://contabilidadecarioca.com.br/wp-content/uploads/2017/02/imagem-sem-foto-de-perfil-do-facebook-1348864936180_956x500-300x157.jpg" alt="Perfil sem foto">
-    <p>
-        Pacientes: Clique <a href="Pacientes/tela1_paci.html">aqui</a> para acessar os pacientes.
-    </p>
-    <p>
-        Tutoriais: Clique <a href="Tutoriais/tela1_tut.html">aqui</a> para acessar os tutoriais.
-    </p>
-    <p>
-        Contatos: Clique <a href="Contatos/tela1_ctt.html">aqui</a> para acessar os contatos.
-    </p>
+    <header>
+        <ul class="linha">
+            <li class="coluna">
+                <img class="perfil" src=../assets/img/profile_picture.png alt="Foto de Perfil">
+            </li>
+            <li class="coluna">
+                <p class="cab1">Nome do cuidador</p>
+                <p class="cab">Idade do Cuidador</p>
+                <p class="cab">Tempo de atuação </p>
+            </li>
+        </ul>
+    </header>
+    <main class="coluna_topicos">
+        <nav class="joga_dir">
+            <a class="bloco_dir" href="Pacientes/tela1_paci.html">
+                Pacientes
+                <img class="img_pacientes" src=../assets/img/pacientes.png alt="img">
+            </a>
+        </nav>
+        <nav class="joga_esq">
+                <a class="bloco_esq" href="Tutoriais/tela1_tut.html">
+                Tutoriais
+                <img class="img_tutoriais" src=../assets/img/tutorial.png alt="img">
+            </a>
+        </nav>    
+            
+        <nav class="joga_dir">
+            <a class="bloco_dir" href="Contatos/tela1_ctt.html">
+                Contatos
+                <img class="img_contatos" src=../assets/img/contatos.png alt="img">
+            </a>
+        </nav>
+            
+    </main>
+    <footer class="linha_normal">
+        <img class="img_rodape_options" src="../assets/img/options.png" alt="options">
+        <img class="img_rodape_config" src="../assets/img/config.png" alt="configuracao">
+    </footer>
 </body>
 </html>

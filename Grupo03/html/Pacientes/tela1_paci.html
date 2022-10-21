@@ -4,32 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/pacientes.css">
     <title>Pacientes 1</title>
 </head>
 <body>
     <header>
-        <h1>
+        <h1 class="header">
             Pacientes
         </h1>
     </header>
     <main>
-        <h2>
-            Atuais
-        </h2>
         <ul>
-            <li> <a href="tela2_paci.html">Dolores Figueira</a> </li>
-            <li>Antônio Mendonça</li>
+            <li> <h2>Atuais:</h2> </li>
+            <li>
+                <ul  class="status">
+                    <li class="alinhamento"> <a href="tela2_paci.html" class="perfil">
+                        <img class="img_perfil" src="../../assets/img/dolores.png" alt="Dolores F.">
+                        <p class="nome">Dolores Figueira</p> 
+                        </a>
+                    </li>
+                    <li class="alinhamento"> <nav class="perfil">
+                        <img class="img_perfil" src="../../assets/img/antonio.png" alt="Antonio M.">
+                        <p> Antônio Mendonça </p>
+                        </nav>
+                    </li>
+                </ul>
+            </li>
         </ul>
-        <h2>
-            Antigos
-        </h2>
         <ul>
-            <li>Rodolfo da Silva</li>
+            <li> <h2>Antigos:</h2> </li>
+            <li>
+                <ul class="status">
+                    <li class="alinhamento"> <nav class="perfil">
+                        <img class="img_perfil" src="../../assets/img/rodolfo.png" alt="Rodolfo S.">
+                        <p> Rodolfo da Silva </p>
+                        </nav>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </main>
-    <footer>
+    <footer class="roda_esq">
         <a href="../tela_principal.html">
-            <img src="/Grupo03/assets/img/voltar.png" alt="voltar">
+            <img class="img_rodape" src="/../../assets/img/voltar.png" alt="voltar">
         </a>
     </footer>
 
