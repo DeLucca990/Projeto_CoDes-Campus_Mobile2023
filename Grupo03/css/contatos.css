@@ -7,6 +7,7 @@ body{
 }
 
 .contatos{
+    font-size: xx-large;
     color: rgb(249, 215, 232);
     display: flex;
     justify-content: center;
@@ -94,10 +95,15 @@ body{
 }
 
 .nome{
+    font-size: x-large;
     display: flex;
     justify-content: left;
     padding-left: 1.5rem;
     color: #000000;
+}
+
+.size_num{
+    font-size: large;
 }
 
 .img_rodape{
@@ -146,6 +152,14 @@ a{
 }
 
 .novo_nome{
+    font-size: x-large;
+    display: flex;
+    justify-content: left;
+    color: #000000;
+}
+
+.sub_nome{
+    font-size: large;
     display: flex;
     justify-content: left;
     color: #000000;

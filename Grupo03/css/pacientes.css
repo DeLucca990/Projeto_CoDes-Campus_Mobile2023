@@ -7,6 +7,7 @@ body{
 }
 
 .header{
+    font-size: xx-large;
     color:rgb(249, 215, 232);
     display: flex;
     justify-content: center;
@@ -22,10 +23,18 @@ body{
     justify-content: space-evenly;
 }
 
+.size_cab{
+    font-size: x-large;
+}
+
 h1,h2{
     margin: 0rem;
 }
 
+h4{
+    font-size: large;
+    margin: 1rem;
+}
 
 .p2{
     padding-left: 1.5rem;
@@ -78,6 +87,7 @@ main{
 }
 
 .nome{
+    font-size: xx-large;
     display: flex;
     justify-content: left;
     color: #000000;
@@ -174,6 +184,10 @@ main{
     justify-content: left;
 }
 
+.data{
+    font-size: x-large;
+}
+
 .linha_tarefas{
     display: flex;
     flex-direction: row;
@@ -209,8 +223,4 @@ main{
 .borda_tarefas{
     border-left: solid;
     border-color: black;
-}
-
-h4{
-    margin: 1rem;
 }

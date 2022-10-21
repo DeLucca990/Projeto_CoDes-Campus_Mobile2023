@@ -7,6 +7,7 @@ body{
 }
 
 .header{
+    font-size: xx-large;
     color: rgb(249, 215, 232);
     display: flex;
     justify-content: center;
