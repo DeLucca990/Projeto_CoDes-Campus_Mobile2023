@@ -50,12 +50,14 @@ ul {
 }
 
 .cab1{
+    font-family: 'PT Serif', serif;
     font-size:x-large;
     margin: auto;
     color: rgb(0, 0, 0)
 }
 
 .cab{
+    font-family: 'PT Serif', serif;
     font-size: large;
     margin: auto;
     color: rgb(0, 0, 0)
@@ -80,6 +82,7 @@ ul {
 }
 
 .bloco_dir{
+    font-family: 'PT Serif', serif;
     font-size: x-large;
     width: 13rem;
     height: 5rem;
@@ -96,6 +99,7 @@ ul {
     position: relative;
 }
 .bloco_esq{
+    font-family: 'PT Serif', serif;
     font-size: x-large;
     width: 13rem;
     height: 5rem;

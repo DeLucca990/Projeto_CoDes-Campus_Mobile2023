@@ -7,6 +7,7 @@ body{
 }
 
 .header{
+    font-family: 'Prompt', sans-serif;
     font-size: xx-large;
     color:rgb(249, 215, 232);
     display: flex;
@@ -28,6 +29,7 @@ body{
 .size_cab{
     margin-left: 5%;
     font-size: x-large;
+    font-family: 'Prompt', sans-serif;
 }
 
 h1,h2{
@@ -40,6 +42,8 @@ h4{
 }
 
 .p2{
+    font-family: 'PT Serif', serif;
+    font-size:x-large;
     padding-left: 1.5rem;
 }
 
@@ -68,6 +72,7 @@ main{
 }
 
 .alinhamento,.a{
+    font-family: 'PT Serif', serif;
     align-self: center;
 }
 
@@ -91,6 +96,7 @@ main{
 }
 
 .nome{
+    font-family: 'PT Serif', serif;
     font-size: xx-large;
     display: flex;
     justify-content: left;
@@ -115,6 +121,7 @@ main{
 }
 
 .perfil{
+    font-family: 'PT Serif', serif;
     font-size: x-large;
     width: 85vw;
     height: 5rem;
@@ -192,6 +199,7 @@ main{
 }
 
 .data{
+    font-family: 'Prompt', sans-serif;
     font-size: x-large;
     padding-top: 1rem;
     margin-bottom: .5rem;
@@ -220,6 +228,7 @@ main{
 }
 
 .coluna_tarefas{
+    font-family: 'PT Serif', serif;
     display: flex;
     flex-direction: column;
     align-items: center;

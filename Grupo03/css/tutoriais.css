@@ -7,6 +7,7 @@ body{
 }
 
 .header{
+    font-family: 'Prompt', sans-serif;
     font-size: xx-large;
     color: rgb(249, 215, 232);
     display: flex;
@@ -20,8 +21,15 @@ body{
     padding: 0.2rem;
 }
 
+.header_4{
+    font-size: 1.8rem;
+    margin: 0.7rem;
+    padding: 0.2rem;
+}
+
 
 .box1{
+    font-family: 'PT Serif', serif;
     font-size: x-large;
     width: 13rem;
     height: 5rem;
@@ -39,6 +47,7 @@ body{
 }
 
 .box2{
+    font-family: 'PT Serif', serif;
     font-size: x-large;
     width: 13rem;
     height: 5rem;
@@ -59,6 +68,7 @@ body{
 }
 
 .box3{
+    font-family: 'PT Serif', serif;
     font-size: x-large;
     width: 13rem;
     height: 5rem;
@@ -101,6 +111,7 @@ li{
 }
 
 .desc{
+    font-family: 'PT Serif', serif;
     font-size: large;
     align-self: center;
     padding-left: 1rem;
