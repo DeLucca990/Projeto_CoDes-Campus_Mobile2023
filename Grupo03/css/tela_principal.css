@@ -1,0 +1,194 @@
+body{
+    background-color: rgb(249, 215, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:97.5vh;
+}
+
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+    margin-inline-start: 0rem;
+    margin-inline-end: 0rem;
+    padding-inline-start: 1rem;
+}
+
+.perfil{
+    width: 8rem;
+    height: 8rem;
+    margin-right: 2rem;
+    margin-left:0rem;
+    
+}
+
+.img_pacientes{
+    width: 4rem;
+    height: 4rem;
+    margin: auto;
+    
+}
+
+.img_tutoriais{
+    width: 4rem;
+    height: 4rem;
+    margin: auto;
+}
+
+.img_contatos{
+    width: 4rem;
+    height: 4rem;
+    margin: auto;
+}
+
+.cab1{
+    font-family: 'PT Serif', serif;
+    font-size:x-large;
+    margin: auto;
+    color: rgb(0, 0, 0)
+}
+
+.cab{
+    font-family: 'PT Serif', serif;
+    font-size: large;
+    margin: auto;
+    color: rgb(0, 0, 0)
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem;
+}
+
+.margem{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.bloco_dir{
+    font-family: 'PT Serif', serif;
+    font-size: x-large;
+    width: 13rem;
+    height: 5rem;
+    display: flex;
+    justify-content:right;
+    background-color: rgb(152, 194, 245);
+    border: #000000;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: black;
+    align-items: center;
+    padding-left: 1rem;
+    color: #000000;
+    position: relative;
+}
+.bloco_esq{
+    font-family: 'PT Serif', serif;
+    font-size: x-large;
+    width: 13rem;
+    height: 5rem;
+    display: flex;
+    justify-content: left;
+    background-color: rgb(152, 194, 245);
+    border: #000000;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: black;
+    align-items: center;
+    padding-left: 1rem;
+    color: #000000;
+    position: relative;
+}
+
+.joga_dir{
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10%;
+    margin-right: 5%;
+}
+
+.joga_esq{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+
+.img_rodape_options{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: end;
+    margin-right: 0.5rem;
+    background-color: rgb(152, 194, 245);
+    border: #000000;
+    border-style: solid;
+    border-color: #000000;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    margin-right: -0.01rem;
+}
+
+.img_rodape_config{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: end;
+    margin-right: 0.5rem;
+    background-color: rgb(152, 194, 245);
+    border: #000000;
+    border-style: solid;
+    border-color: #000000;
+    border-left: none;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+.coluna_topicos{
+    display: flex;
+    flex-direction: column;
+}
+
+.linha_normal{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+}
+
+.trespontinhos_direita{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: -2rem;
+    left: -1.5rem;
+    padding: 0.7rem;
+}
+
+.trespontinhos_esquerda{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 12.5rem;
+    padding: 0.7rem;
+}
+
+header {
+    margin-top: 0.5rem;
+}

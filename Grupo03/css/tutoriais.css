@@ -1,0 +1,178 @@
+body{
+    background-color: rgb(249, 215, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:97.5vh;
+}
+
+.header{
+    font-family: 'Prompt', sans-serif;
+    font-size: xx-large;
+    color: rgb(249, 215, 232);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(31, 137, 255);
+    border: #000000;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-color: black;
+    margin: 0.7rem;
+    padding: 0.2rem;
+}
+
+.header_4{
+    font-size: 1.8rem;
+    margin: 0.7rem;
+    padding: 0.2rem;
+}
+
+
+.box1{
+    font-family: 'PT Serif', serif;
+    font-size: x-large;
+    width: 13rem;
+    height: 5rem;
+    display: flex;
+    justify-content: left;
+    background-color:  rgb(152, 194, 245);
+    border: #000000;
+    border-style: solid;
+    border-radius: 1rem;
+    margin-left: 5%;
+    align-items: center;
+    padding-left: 1rem;
+    position: relative;
+    color: #000000;
+}
+
+.box2{
+    font-family: 'PT Serif', serif;
+    font-size: x-large;
+    width: 13rem;
+    height: 5rem;
+    display: flex;
+    justify-content:right;
+    background-color:  rgb(152, 194, 245);
+    border: #000000;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: black;
+    margin-right: 5%;
+    align-items: center;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    color: #000000;
+}
+
+.box3{
+    font-family: 'PT Serif', serif;
+    font-size: x-large;
+    width: 13rem;
+    height: 5rem;
+    display: flex;
+    justify-content: left;
+    background-color:  rgb(152, 194, 245);
+    border: #000000;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: black;
+    margin-left: 5%;
+    align-items: center;
+    padding-left: 1rem;
+    position: relative;
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0rem;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+.borda_meio{
+    border: solid;
+    border-left: 0.01rem;
+    border-right: 0.01rem;
+}
+
+.desc{
+    font-family: 'PT Serif', serif;
+    font-size: large;
+    align-self: center;
+    padding-left: 1rem;
+}
+
+.yt{
+    width: 8.5rem;
+    height: 8.5rem;
+}
+
+.img{
+    width: 4rem;
+    height: 4rem;
+    margin: auto;
+}
+
+.coluna_topicos{
+    display: flex;
+    flex-direction: column;
+}
+
+.joga_esq{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10%;
+}
+
+.joga_dir{
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10%;
+}
+
+
+.img_rodape{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: end;
+    margin-right: 0.5rem;
+    margin-left: 2%;   
+}
+
+.trespontinhos_direita{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: -2rem;
+    left: -1.5rem;
+    padding: 0.7rem;
+}
+
+.trespontinhos_esquerda{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 12.5rem;
+    padding: 0.7rem;
+}
+
+.margem{
+    margin: 2%;
+}
