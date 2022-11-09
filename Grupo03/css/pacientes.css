@@ -245,3 +245,16 @@ main{
     border-left: solid;
     border-color: black;
 }
+
+.linha_rodape{
+    display: flex;
+    flex-direction: row;
+}
+
+.img_rodape_esq{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0.5rem;
+}

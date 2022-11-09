@@ -133,6 +133,14 @@ body{
     margin-right: 0.5rem;
 }
 
+.img_rodape_esq{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0.5rem;
+}
+
 a:link {
     color: #000000;
     text-decoration: none;
