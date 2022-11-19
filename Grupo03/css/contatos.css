@@ -133,6 +133,15 @@ body{
     margin-right: 0.5rem;
 }
 
+.img_alerta{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-right: 0.5rem;
+}
+
 .img_rodape_esq{
     width: 4rem;
     height: 4rem;
