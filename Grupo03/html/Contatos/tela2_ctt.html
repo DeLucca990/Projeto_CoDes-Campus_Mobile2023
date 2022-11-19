@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/contatos.css">
+    <link rel="stylesheet" href="../../css/popup_ctt2.css">
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Prompt&display=swap" rel="stylesheet">
+    <script src="../../js/popup_ctt2.js"></script>
     <title>Contatos 2</title>
 </head>
 <body>
@@ -42,10 +44,35 @@
             </a>
         </nav>
         <nav class="linha_rodape">
-            <img class="img_rodape_dir" src="../../assets/img/atencao.png" alt="">
-            <img class="img_rodape_dir" src="../../assets/img/reportar.png" alt="">
+            <img class="img_rodape_dir" id="aten" src="../../assets/img/atencao.png" alt="">
+            <img class="img_rodape_dir" id="report" src="../../assets/img/reportar.png" alt="">
         </nav>
     </footer>
-    
+    <div class="popup-wrapper">
+        <div class="popup1">
+            <div class="popup-close">
+                <!--<img class="img_close" src="../../assets/img/close_button.png" alt="fechar">-->
+            </div>
+            <div class="popup-content">
+                <p class="texto_popup">ATENÇÃO: Após 5 minutos do envio as mensagens não poderão ser apagadas.</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup-wrapper">
+        <div class="popup2">
+            <div class="popup-close">
+                <!--<img class="img_close" src="../../assets/img/close_button.png" alt="fechar">-->
+            </div>
+            <div class="popup-content">
+                <p class="texto_popup">Deseja reportar o RESPONSÁVEL?</p>
+            </div>
+            <div class="popup-sim">
+                <h1>Sim</h1>
+            </div>
+            <div class="popup-nao">
+                <h1>Não</h1>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

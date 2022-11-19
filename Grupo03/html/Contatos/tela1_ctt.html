@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/contatos.css">
+    <link rel="stylesheet" href="../../css/popup_ctt1.css">
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Prompt&display=swap" rel="stylesheet">
+    <script src="../../js/popup_ctt1.js"></script>
 
     <title>Contatos 1</title>
 </head>
@@ -20,7 +22,7 @@
             <img class="perfil" src="../../assets/img/dolores.png" alt="">
             <nav>
                 <ul>
-                    <li><h2 class="novo_nome teste">Dolores Figueira</h2></li>
+                    <li><h2 class="novo_nome teste" id="dolores">Dolores Figueira</h2></li>
                 </ul>
             </nav>
         </nav>
@@ -61,11 +63,30 @@
             </nav>
         </nav>
     </main>
-    <footer class="roda_esq">
-        <a href="../index.html">
+    <footer class="linha_normal">
+        <nav class="linha_rodape">
+            <a href="../index.html">
                 <img class="img_rodape_esq" src="../../assets/img/voltar.png" alt="voltar">
-        </a>
+            </a>
+        </nav>
+        <nav class="linha_rodape">
+            <img class="img_alerta" src="../../assets/img/alerta.png" alt="alerta">
+        </nav>
     </footer>
-
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup-content">
+                <p class="texto_popup">Esse recurso deve ser usado somente em caso EMERGENCIAL. 
+                    Todos os contatos relacionados a Dolores Figueira serão notificados. Deseja prosseguir com a ação?
+                </p>
+            </div>
+            <div class="popup-sim">
+                <h1>Sim</h1>
+            </div>
+            <div class="popup-nao">
+                <h1>Não</h1>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
