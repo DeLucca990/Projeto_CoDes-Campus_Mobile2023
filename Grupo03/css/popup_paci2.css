@@ -15,7 +15,7 @@
     border-style: solid;
     border-width: 0.15rem;
     border-color: black;
-    height: 15%;
+    height: 10%;
     width: 72%;
     padding: 1rem;
     position: absolute;
@@ -32,7 +32,7 @@
 .div_princ{
     display: flex;
     justify-content: space-around;
-    height: 40%;
+    height: 45%;
     align-items: flex-end;
 }
 
