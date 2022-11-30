@@ -30,6 +30,20 @@ ul {
     
 }
 
+.img_info_right{
+    width: 3rem;
+    height: 3rem;
+    margin: auto;
+    margin-right: 0.75rem;
+}
+
+.img_info_left{
+    width: 3rem;
+    height: 3rem;
+    margin: auto;
+    margin-left: 0.75rem;
+}
+
 .img_pacientes{
     width: 4rem;
     height: 4rem;
