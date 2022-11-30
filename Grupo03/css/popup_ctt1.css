@@ -15,7 +15,7 @@
     border-style: solid;
     border-width: 0.15rem;
     border-color: black;
-    height: 27%;
+    height: 22%;
     width: 72%;
     padding: 1rem;
     position: absolute;
@@ -23,17 +23,21 @@
     left: 10%;
 }
 
-.img_close{
-    width: 4rem;
-    height: 4rem;
-    display: flex;
-    justify-content:right;
-    align-items: flex-start;
-    margin-right: 1rem;
-}
 
 .texto_popup{
     font-family:'PT Serif', serif;
     font-size:medium;
     line-height: 1.5;
+}
+
+.div_princ{
+    display: flex;
+    justify-content: space-around;
+    height: 20%;
+    align-items: flex-end;
+}
+
+.resp{
+    font-family:'PT Serif', serif;
+    font-size: larger;
 }
