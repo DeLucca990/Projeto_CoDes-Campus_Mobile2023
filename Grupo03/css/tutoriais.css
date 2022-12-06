@@ -6,6 +6,57 @@ body{
     min-height:97.5vh;
 }
 
+.img_info_right{
+    width: 3rem;
+    height: 3rem;
+    margin: auto;
+    margin-right: 0.75rem;
+}
+
+.img_info_left{
+    width: 3rem;
+    height: 3rem;
+    margin: auto;
+    margin-left: 0.75rem;
+}
+
+.bloco_dir{
+    font-family: 'PT Serif', serif;
+    font-size: x-large;
+    width: 13rem;
+    height: 5rem;
+    display: flex;
+    justify-content:right;
+    background-color: rgb(152, 194, 245);
+    border: #000000;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: black;
+    align-items: center;
+    padding-left: 1rem;
+    color: #000000;
+    position: relative;
+    margin-right: 0.7rem;
+}
+.bloco_esq{
+    font-family: 'PT Serif', serif;
+    font-size: x-large;
+    width: 13rem;
+    height: 5rem;
+    display: flex;
+    justify-content: left;
+    background-color: rgb(152, 194, 245);
+    border: #000000;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: black;
+    align-items: center;
+    padding-left: 1rem;
+    color: #000000;
+    position: relative;
+    margin-left: 0.7rem;
+}
+
 .header{
     font-family: 'Prompt', sans-serif;
     font-size: xx-large;
