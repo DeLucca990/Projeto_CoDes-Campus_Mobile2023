@@ -1,4 +1,4 @@
-# Projeto_Codes
+# Projeto Codes/Campus Mobile 2023
 Criando um aplicativo em JS (Puro), HTML e CSS
 ## Integrantes
 * Pedro De Lucca
