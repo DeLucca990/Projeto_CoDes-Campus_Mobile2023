@@ -1,0 +1,210 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-color:rgb(249, 215, 232);
+   
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    background-color: #482861;
+    justify-content: space-evenly;
+    padding: 0 1.5rem;
+}
+
+.contato{
+    background-color: "#9564F5";
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.img-usuario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+.info-usuario{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+
+.nome-usuario{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.descricao-usuario{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+
+.nav-acoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-acoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lista-acoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#close, #search{
+    background-color: transparent;
+    color: white;
+    border: 0;
+    width: 1rem;
+    height: auto;
+    margin: 1rem;
+}
+
+h2{
+    font-size: 1.2rem;
+    color: black;
+}
+
+h3{
+    font-size: 0.8rem;
+    color: black;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 0.2rem 0;
+}
+
+.msg-titulo, .msg-titulo-invertido{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.msg-titulo-invertido{
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.msg-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #FFF4FA;
+}
+
+.msg-resposta, .msg-usuario{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 2.5rem;
+    padding: 1rem;
+    color: white;
+}
+
+.msg-usuario{
+    align-self: flex-start;
+}
+
+.msg-resposta{
+    align-self: flex-end;
+}
+
+.bolha-usuario{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    background-color:#B34983;
+    border: #B34983 0.2rem solid;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.bolha-resposta{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    background-color: #482861;
+    border-color: #D9AADD;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.bloco-envio-msg{
+    display: flex;
+    flex-direction: row;
+    padding: 0.2rem;
+    margin: 1.2rem;
+}
+
+.entrada-msg{
+    width: 80%;
+    margin-right: 1%;
+    border: #482861 1px solid;
+}
+
+.botao-enviar{
+    width: 20%;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #482861;
+}
+
+input[type="text"]
+{
+    padding: 0.4rem;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .cabecalho{
+        display: block;
+        text-align: center;
+    }
+
+    .nav-acoes{
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-usuario{
+        align-self: center;
+    }
+
+    .bolha-resposta, .bolha-usuario{
+        width: 100%;
+    }
+
+   .botao-enviar{
+       font-size: 1rem;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+    .entrada-msg{
+        width: 70%;
+    }
+    
+    .botao-enviar{
+        width: 30%;
+    }
+}
