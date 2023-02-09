@@ -10,9 +10,8 @@ body{
 .cabecalho{
     display: flex;
     flex-direction: row;
-    background-color: #482861;
+    background-color:  rgb(31, 137, 255);
     justify-content: space-evenly;
-    padding: 0 1.5rem;
 }
 
 .contato{
@@ -20,6 +19,7 @@ body{
     display: flex;
     flex-direction: row;
     padding: 1rem;
+    margin-bottom: -2.5rem;
 }
 
 .img-usuario{
@@ -28,6 +28,7 @@ body{
     width: 100%;
     max-width: 100px;
     height: auto;
+    margin-left: 1rem;
 }
 
 .info-usuario{
@@ -46,10 +47,12 @@ body{
 }
 
 .descricao-usuario{
+    font-family: 'Prompt', sans-serif;
+    font-size: large;
+    color: rgb(249, 215, 232);
     display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    color: whitesmoke;
+    justify-content: center;
+    background-color: rgb(31, 137, 255);
 }
 
 .nav-acoes{
@@ -110,7 +113,7 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #FFF4FA;
+    background-color: rgb(249, 215, 232);
 }
 
 .msg-resposta, .msg-usuario{
@@ -118,7 +121,7 @@ h3{
     flex-direction: column;
     margin: 0.5rem 2.5rem;
     padding: 1rem;
-    color: white;
+    color: black;
 }
 
 .msg-usuario{
@@ -133,8 +136,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    background-color:#B34983;
-    border: #B34983 0.2rem solid;
+    background-color:rgb(152, 194, 245);
     padding: 1rem;
     border-radius: 0.5rem;
 }
@@ -143,8 +145,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-    background-color: #482861;
-    border-color: #D9AADD;
+    background-color: rgba(118, 179, 118, 0.7);
     padding: 1rem;
     border-radius: 0.5rem;
 }
@@ -159,14 +160,16 @@ h3{
 .entrada-msg{
     width: 80%;
     margin-right: 1%;
-    border: #482861 1px solid;
+    border: black 1px solid;
+    border-radius: 0.5rem;
 }
 
 .botao-enviar{
     width: 20%;
     font-size: 1.5rem;
     color: white;
-    background-color: #482861;
+    background-color: rgb(31, 137, 255);
+    border-radius: 0.5rem;
 }
 
 input[type="text"]
@@ -207,4 +210,30 @@ input[type="text"]
     .botao-enviar{
         width: 30%;
     }
+}
+
+.contatos{
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(249, 215, 232);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(31, 137, 255);
+    margin-bottom: 0.2rem;
+}
+
+.linha_rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img_rodape_esq{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
 }
