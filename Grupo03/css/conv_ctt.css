@@ -8,9 +8,10 @@ body{
 }
 
 .cabecalho{
+    position: fixed;
     display: flex;
     flex-direction: row;
-    background-color:  rgb(31, 137, 255);
+    background-color:  rgb(152, 194, 245);
     justify-content: space-evenly;
 }
 
@@ -18,7 +19,7 @@ body{
     background-color: "#9564F5";
     display: flex;
     flex-direction: row;
-    padding: 1rem;
+    padding: 1.05rem;
     margin-bottom: -2.5rem;
 }
 
@@ -52,7 +53,7 @@ body{
     color: rgb(249, 215, 232);
     display: flex;
     justify-content: center;
-    background-color: rgb(31, 137, 255);
+    background-color: rgb(152, 194, 245);
 }
 
 .nav-acoes{
@@ -100,8 +101,8 @@ h3{
 .msg-titulo, .msg-titulo-invertido{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .msg-titulo-invertido{
@@ -114,6 +115,8 @@ h3{
     flex-direction: column;
     justify-content: space-evenly;
     background-color: rgb(249, 215, 232);
+    padding-top: 7.5rem;
+    padding-bottom: 4rem;
 }
 
 .msg-resposta, .msg-usuario{
@@ -136,7 +139,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    background-color:rgb(152, 194, 245);
+    background-color:rgb(31, 137, 255);
     padding: 1rem;
     border-radius: 0.5rem;
 }
@@ -236,4 +239,13 @@ input[type="text"]
     margin-left: 0.5rem;
     margin-top: 0.5rem;
     margin-right: 0.5rem;
+}
+
+footer{
+    background-color: rgb(249, 215, 232);
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    position: fixed;
+    width: 100%;
 }

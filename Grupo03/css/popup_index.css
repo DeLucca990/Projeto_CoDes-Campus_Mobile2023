@@ -25,8 +25,33 @@
     left: 10%;
 }
 
+.popup2{
+    display: flex;
+    align-items:start;
+    text-align:left;
+    background: rgb(31, 137, 255);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 0.15rem;
+    border-color: black;
+    height: 60%;
+    width: 72%;
+    padding: 1rem;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
 .texto_popup{
     font-family:'PT Serif', serif;
     font-size:medium;
     line-height: 1.5;
+}
+
+.texto_popup2{
+    font-family:'PT Serif', serif;
+    font-size:medium;
+    font-weight: bold;
+    line-height: 2;
+    text-decoration: underline;
 }
