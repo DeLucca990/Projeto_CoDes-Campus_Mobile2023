@@ -24,22 +24,23 @@ ul {
 
 .perfil{
     width: 8rem;
-    height: 8rem;
+    height: 7.7rem;
     margin-right: 2rem;
     margin-left:0rem;
+    border-radius: 5rem;
     
 }
 
 .img_info_right{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     margin: auto;
     margin-right: 0.75rem;
 }
 
 .img_info_left{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     margin: auto;
     margin-left: 0.75rem;
 }
