@@ -9,9 +9,11 @@ body{
 
 .cabecalho{
     position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    background-color:  rgb(152, 194, 245);
+    background-color:  rgb(31, 137, 255);
     justify-content: space-evenly;
 }
 
@@ -19,6 +21,7 @@ body{
     background-color: "#9564F5";
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 1.05rem;
     margin-bottom: -2.5rem;
 }
@@ -42,18 +45,16 @@ body{
     display: flex;
     flex-direction: column;
     font-weight: bold;
-    color: white;
+    color: rgb(249, 215, 232);
     font-size: 1.5rem;
     margin-bottom: 0.2rem;
 }
 
 .descricao-usuario{
-    font-family: 'Prompt', sans-serif;
     font-size: large;
     color: rgb(249, 215, 232);
     display: flex;
     justify-content: center;
-    background-color: rgb(152, 194, 245);
 }
 
 .nav-acoes{
@@ -139,7 +140,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    background-color:rgb(31, 137, 255);
+    background-color:rgb(152, 194, 245);
     padding: 1rem;
     border-radius: 0.5rem;
 }
@@ -236,9 +237,7 @@ input[type="text"]
     height: 4rem;
     display: flex;
     align-items: flex-start;
-    margin-left: 0.5rem;
-    margin-top: 0.5rem;
-    margin-right: 0.5rem;
+    margin: 0.17rem;
 }
 
 footer{
