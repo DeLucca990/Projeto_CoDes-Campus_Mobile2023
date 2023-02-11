@@ -54,4 +54,12 @@ document.addEventListener('DOMContentLoaded', function(){
             popup[3].style.display='none'
         }
     })
+
+const menu = document.querySelector(".menu");
+const toggleButton = document.querySelector(".toggle-button");
+
+toggleButton.addEventListener("click", () => {
+menu.classList.toggle("open");
+    });
+
 })

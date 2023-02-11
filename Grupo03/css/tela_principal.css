@@ -228,3 +228,22 @@ ul {
 header {
     margin-top: 0.5rem;
 }
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    bottom: 0;
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu.open {
+    left: 0;
+  }
+  
+  
