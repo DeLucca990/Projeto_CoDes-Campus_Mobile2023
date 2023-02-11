@@ -26,9 +26,10 @@ ul {
     width: 8rem;
     height: 7.7rem;
     margin-right: 2rem;
-    margin-left:0rem;
+    margin-left: 0.5rem;
+    margin-top: 0.1rem;
     border-radius: 5rem;
-    
+    border: 0.1rem solid black;
 }
 
 .img_info_right{
@@ -68,6 +69,7 @@ ul {
     font-family: 'PT Serif', serif;
     font-size:x-large;
     margin: auto;
+    padding-right: 0.5rem;
     color: rgb(0, 0, 0)
 }
 
@@ -113,10 +115,29 @@ ul {
     color: #000000;
     position: relative;
 }
+
 .bloco_esq{
     font-family: 'PT Serif', serif;
     font-size: x-large;
     width: 13rem;
+    height: 5rem;
+    display: flex;
+    justify-content: left;
+    background-color: rgb(152, 194, 245);
+    border: #000000;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: black;
+    align-items: center;
+    padding-left: 1rem;
+    color: #000000;
+    position: relative;
+}
+
+.bloco_esq_index{
+    font-family: 'PT Serif', serif;
+    font-size: x-large;
+    width: 15rem;
     height: 5rem;
     display: flex;
     justify-content: left;

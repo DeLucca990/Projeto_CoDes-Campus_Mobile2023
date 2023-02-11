@@ -82,13 +82,15 @@ main{
     margin: 2%;
     margin-right: 1.5rem;
     border-radius: 5rem;
+    border: 0.1rem solid black;
 }
 
 .img_perfil{
     width: 4rem;
     height: 4rem;
-    padding: 2%;
+    margin: 2%;
     border-radius: 5rem;
+    border: 0.1rem solid black;
 }
 
 .img_icons{

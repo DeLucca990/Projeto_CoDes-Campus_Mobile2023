@@ -29,8 +29,6 @@ html{
   
   }
   
-  
-  
   body {
     display: flex;
     margin-top: 50px;
@@ -50,12 +48,17 @@ html{
 
   #monthDisplay{
     font-family: 'Prompt', sans-serif;
+    margin-left: 200px;
+  }
+
+  #next-back-Display{
+    margin-right: 200px;
   }
   
   #header {
     padding: 10px;
     color: var(--header-color) ;
-    font-size: 26px;
+    font-size: 20px;
     font-family: sans-serif;
     display: flex;
     justify-content: space-between;
@@ -147,6 +150,7 @@ html{
   }
   #saveButton, #closeButton {
     background-color: var(--header-button);
+    
   }
   #eventText {
     font-size: 14px;
@@ -160,4 +164,8 @@ html{
     height: 100vh;
     position: absolute;
     background-color: rgba(0,0,0,0.8);
+  }
+
+  #cancelButton, #closeButton{
+    margin-left: 193px;
   }
