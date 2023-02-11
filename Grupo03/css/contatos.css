@@ -96,8 +96,17 @@ body{
 .perfil{
     width: 4.18rem;
     height: 4.18rem;
+    border-radius: 5rem;
+    border: 0.1rem solid black;
+    margin: 1.5%;
+}
+
+.label{
+    width: 100%;
+    height: 4.18rem;
     padding: 2%;
-    border-right: solid;
+    padding-left: 0rem;
+    border-left: solid;
     border-color: black;
 }
 
@@ -167,6 +176,8 @@ a{
     margin-left: auto;
     margin-right: auto; 
     display: block;
+    border-radius: 5rem;
+    border: 0.1rem solid black;
 }
 
 .fonte{
@@ -185,6 +196,7 @@ a{
     display: flex;
     justify-content: left;
     color: #000000;
+    margin-top: 0.5rem;
 }
 
 .sub_nome{
@@ -206,11 +218,6 @@ li{
     padding-bottom: .5rem;
     margin: 0rem;
 }
-
-.teste{
-    margin: 0rem;
-}
-
 
 .linha{
     display: flex;

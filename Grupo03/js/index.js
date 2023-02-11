@@ -55,11 +55,20 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     })
 
-const menu = document.querySelector(".menu");
-const toggleButton = document.querySelector(".toggle-button");
+    const menu = document.querySelector(".menu");
+    const overlay = document.querySelector(".overlay");
+    const toggleButton = document.querySelector(".toggle-button");
 
-toggleButton.addEventListener("click", () => {
-menu.classList.toggle("open");
-    });
+    toggleButton.addEventListener('click', function(){
+        overlay.classList.toggle("open")
+        menu.classList.toggle("open")
+    })
+
+    overlay.addEventListener("click", (event) => {
+        if (!menu.contains(event.target)) {
+          menu.classList.remove("open");
+          overlay.classList.remove("open");
+        }
+    })
 
 })

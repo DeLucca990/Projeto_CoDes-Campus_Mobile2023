@@ -1,5 +1,5 @@
 *{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'PT Serif', serif;
 }
 
 body{
@@ -42,6 +42,7 @@ body{
 }
 
 .nome-usuario{
+    font-family: 'Prompt', sans-serif;;
     display: flex;
     flex-direction: column;
     font-weight: bold;
@@ -91,15 +92,25 @@ h2{
     color: black;
 }
 
-h3{
+.h3_dir{
     font-size: 0.8rem;
     color: black;
     font-weight: lighter;
     font-style: italic;
-    margin: 0.2rem 0;
+    margin: 0.5rem;
+    margin-right: -1.7rem;
 }
 
-.msg-titulo, .msg-titulo-invertido{
+.h3_esq{
+    font-size: 0.8rem;
+    color: black;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 0.5rem;
+    margin-left: -1.7rem;
+}
+
+.msg-titulo{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -107,6 +118,10 @@ h3{
 }
 
 .msg-titulo-invertido{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
     align-items: flex-end;
     justify-content: flex-end;
 }
@@ -116,8 +131,9 @@ h3{
     flex-direction: column;
     justify-content: space-evenly;
     background-color: rgb(249, 215, 232);
-    padding-top: 7.5rem;
+    padding-top: 11rem;
     padding-bottom: 4rem;
+    start
 }
 
 .msg-resposta, .msg-usuario{
@@ -233,11 +249,18 @@ input[type="text"]
 }
 
 .img_rodape_esq{
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     align-items: flex-start;
-    margin: 0.17rem;
+    margin: 0.6rem;
+}
+
+.paula-conversa{
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 5rem;
+    border: 0.1rem solid black;
 }
 
 footer{
@@ -246,5 +269,5 @@ footer{
     left: 0;
     height: 80px;
     position: fixed;
-    width: 100%;
+    width: 101%;
 }
