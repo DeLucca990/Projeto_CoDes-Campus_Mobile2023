@@ -11,53 +11,81 @@
     <title>Calendario</title>
 </head>
 <body>
-    <div id="container">
-        <div id="header">
-          <div id="monthDisplay"></div>
-  
-          <div id="next-back-Display">
-            <button id="backButton">Voltar</button>
-            <button id="nextButton">Próximo</button>
-          </div>
-            
+  <div id="add_schedule" class="hide_form">
+    <div class="close_button">
+      <div>
+        <span id="form_top_message"></span>
+        <span id="day"></span>
+        <span id="month"></span>
+        <span id="year"></span>
+      </div>
+      <span id="close_form">X</span>
+    </div>
+    <form>
+      <div class="schedule_time_div">
+        <div>
+          <label for="schedule_initial_time">Começando às:</label>
+          <input id="schedule_initial_time" type="time" value="00:00" />
         </div>
-  
-        <div id="weekdays">
-          <div>Domingo</div>
-          <div>Segunda-feira</div>
-          <div>Terça-feira</div>
-          <div>Quarta-feira</div>
-          <div>Quinta-feira</div>
-          <div>Sexta-feira</div>
-          <div>Sábado</div>
+        <div>
+          <label for="schedule_final_time">Terminando às:</label>
+          <input id="schedule_final_time" type="time" value="23:59" />
         </div>
-  
-  
-        <!-- div dinamic -->
-        <div id="calendar" ></div>
-  
-     
+      </div>
+      <div class="schedule_title_div">
+        <label for="schedule_title">Título</label>
+        <input
+          id="schedule_title"
+          placeholder="Meu Título..."
+          type="text"
+          required
+        />
+      </div>
+      <div class="schedule_description_div">
+        <label for="schedule_description">Descrição</label>
+        <input
+          id="schedule_description"
+          placeholder="Minha Descrição..."
+          type="text"
+        />
+      </div>
+      <div class="schedule_button_div">
+        <button id="save_schedule" form="pop_up" type="button">
+          Confirmar
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="main">
+    <div class="title">
+      <span class="year_title" id="year_title"></span>
+      <span class="month_title" id="month_title"></span>
     </div>
-  
-    <div id="newEventModal">
-      <h2>Nova Tarefa</h2>
-  
-      <input id="eventTitleInput" placeholder="Título da Tarefa"/>
-  
-      <button id="saveButton"> Salvar</button>
-      <button id="cancelButton">Cancelar</button>
+    <div class="calendar">
+      <div id="month_days" class="month_days">
+        <table id="days">
+          <tr>
+            <th>Dom</th>
+            <th class="even">Seg</th>
+            <th>Ter</th>
+            <th class="even">Qua</th>
+            <th>Qui</th>
+            <th class="even">Sex</th>
+            <th>Sáb</th>
+          </tr>
+        </table>
+      </div>
+      <div id="data_display" class="data_display"></div>
     </div>
-  
-    <div id="deleteEventModal">
-      <h2>Tarefa</h2>
-  
-      <div id="eventText"></div><br>
-  
-  
-      <button id="deleteButton">Deletar</button>
-      <button id="closeButton">Fechar</button>
+    <div class="buttons">
+      <button id="back_button">
+        <img class="arrow_img" alt="back" />
+      </button>
+      <button id="t_button">T</button>
+      <button id="next_button">
+        <img class="arrow_img" alt="next" />
+      </button>
     </div>
-  
-    <div id="modalBackDrop"></div>
+  </div>
 </body>
 </html>

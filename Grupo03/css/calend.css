@@ -1,171 +1,438 @@
-*{
-    font-family: 'PT Serif', serif;
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  font-weight: lighter;
 }
 
-html{
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Blurring the background. Applies behind the element... */
+  backdrop-filter: blur(9px);
+  background-size: cover;
+  background-color: rgb(249, 215, 232);
+}
 
+@keyframes display_data {
+  0% {
+    transform: scale3d(0, 1, 1);
+  }
+  100% {
+  transform: scale3d(1, 1, 1);
 
-    --body-color:rgb(249, 215, 232);
-  
-    --header-color:#d36c6c;
-  
-    --header-button:#92a1d1;
-  
-    --color-weekdays: #247BA0;
-    
-    --box-shadow: #CBD4C2;
-  
-    --hover: #e8faed;
-  
-    --current-day:rgb(31, 137, 255);
-  
-    --event-color: #58bae4;
-  
-    --modal-event: #e8f4fa;
-  
-  
-   --color-day:rgb(152, 194, 245);
-    
-  
   }
-  
-  body {
-    display: flex;
-    margin-top: 50px;
-    justify-content: center;
-    background-color: var(--body-color);
+}
+@keyframes opacity {
+  from {
+    opacity: 0%;
   }
-  button {
-    width: 75px;
-    cursor: pointer;
-    box-shadow: 0px 0px 2px gray;
-    border: none;
-    outline: none;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
+  to {
+    opacity: 100%;
   }
-
-  #monthDisplay{
-    font-family: 'Prompt', sans-serif;
-    margin-left: 200px;
+}
+@keyframes display_button_back {
+  0% {
+    right: 25px;
+    transform: scale3d(0.75, 0.75, 1);
   }
-
-  #next-back-Display{
-    margin-right: 200px;
+  100% {
+    right: 0px;
+    transform: scale3d(1, 1, 1);
   }
-  
-  #header {
-    padding: 10px;
-    color: var(--header-color) ;
-    font-size: 20px;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: space-between;
+}
+@keyframes display_button_next {
+  0% {
+    left: 25px;
+    transform: scale3d(0.75, 0.75, 1);
   }
-  #header button {
-    background-color:var(--header-button);
-  }
-  #container {
-    width: 770px;
-  }
-  #weekdays {
-    width: 100%;
-    display: flex;
-    color: var(--color-weekdays) ;
-  }
-  #weekdays div {
-    width: 100px;
-    padding: 10px;
-  }
-  #calendar {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .day {
-    width: 100px;
-    padding: 10px;
-    height: 100px;
-    cursor: pointer;
-    box-sizing: border-box;
-    background-color: var(--color-day);
-    margin: 5px;
-    box-shadow: 0px 0px 3px var(--box-shadow);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 15%;
-  }
-  .day:hover {
-    background-color: var(--hover);
-  }
-  
-  .day + #currentDay {
-    background-color:var(--current-day);
-  }
-  .event {
-    font-size: 10px;
-    padding: 3px;
-    background-color: var(--event-color);
-    color: white;
-    border-radius: 5px;
-    max-height: 55px;
-    overflow: hidden;
-  }
-  .padding {
-    cursor: default !important;
-    background-color: var(--body-color) !important;
-    box-shadow: none !important;
-  }
-  #newEventModal, #deleteEventModal {
-    display: none;
-    z-index: 20;
-    padding: 25px;
-    background-color: var(--modal-event);
-    box-shadow: 0px 0px 3px black;
-    border-radius: 5px;
-    width: 350px;
-    top: 100px;
-    left: calc(50% - 175px);
-    position: absolute;
-    font-family: sans-serif;
-  }
-  #eventTitleInput {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 25px;
-    border-radius: 3px;
-    outline: none;
-    border: none;
-    box-shadow: 0px 0px 3px gray;
-  }
-  #eventTitleInput.error {
-    border: 2px solid red;
-  }
-  #cancelButton, #deleteButton {
-    background-color: var(--header-color);
-  }
-  #saveButton, #closeButton {
-    background-color: var(--header-button);
-    
-  }
-  #eventText {
-    font-size: 14px;
-  }
-  #modalBackDrop {
-    display: none;
-    top: 0px;
+  100% {
     left: 0px;
-    z-index: 10;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    background-color: rgba(0,0,0,0.8);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes display_opacity_zoom {
+  from {
+    opacity: 0%;
+    transform: scale3d(0.5, 0.5, 1);
+  }
+  to {
+    opacity: 100%;
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes display_schedule {
+  from{    
+    opacity: 0%;
+    transform: scale3d(.25,1,1);
+  }
+  to{
+    opacity: 100%;
+    transform: scale3d(1,1,1);
+  }
+}
+@keyframes close_schedule {
+  from{    
+    opacity: 100%;
+    transform: scale3d(1,1,1);
+  }
+  to{
+    opacity: 0%;
+    transform: scale3d(.25,1,1);
+  }
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.title {
+  margin-top: 7%;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+   animation: display_opacity_zoom 1s ease-out; 
+}
+
+.year_title {
+  margin-left: 5px;
+  font-size: 40px;
+  letter-spacing: 5px;
+  color: lightsalmon;
+  text-align: center;
+}
+
+.month_title {
+  margin-left: 15px;
+  font-size: 25px;
+  letter-spacing: 15px;
+  text-align: center;
+}
+
+.calendar {
+  height: 75%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.month_days {
+  margin-top: 10px;
+  width: 100%;
+  height: 50%;
+   animation: opacity 1s ease-in-out; 
+}
+
+table {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 22px;
+}
+
+tr,
+th,
+td {
+  background-color: none;
+}
+
+th {
+  width: 14%;
+  text-align: center;
+  color: white;
+}
+
+th:first-child,
+th:last-child {
+  color: lightsalmon;
+}
+
+td {
+  width: 2.38em;
+  height: 2.38em;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+}
+
+td:hover {
+  background-color: rgba(112, 203, 255, 0.349);
+}
+
+.data_display {
+  width: 95%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(152, 194, 245);
+  border: none;
+  border-radius: 5px;
+  overflow-y: scroll;
+   animation: display_data .5s ease; 
+}
+
+.data_display_item{
+  width: 100%;
+  display: block;
+}
+
+.data_hide_item{
+  display: none;
+}
+
+.data_display_div_title{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.data_display_div_title :first-child{
+  margin-left: 5px;
   }
 
-  #cancelButton, #closeButton{
-    margin-left: 193px;
+
+.data_display_div_title :last-child{
+    margin-right: 10px;
+    background-color: lightsalmon;
+    border-radius: 5px;
   }
+
+.data_display_div_description {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  font-size: 17px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.data_display_div_description span{
+  margin-left: 10px;
+}
+
+.weekend{
+color: lightsalmon;
+}
+
+.today{
+  background-color: black;
+}
+
+.other_month {
+  background: none;
+  color: rgba(175, 175, 175, 0.45);
+}
+
+.scheduled_day{
+  background-color: rgba(112, 203, 255, 0.349);
+}
+
+.buttons {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 35px;
+  font-weight: 400;
+  color: rgb(31, 137, 255);
+}
+
+
+button:hover{
+  cursor: pointer;
+}
+
+button:first-child{
+   animation: display_button_back 1s ease;  
+  position: relative;
+}
+
+button:first-child img{
+  content: url(../assets/img/left-arrow-line-symbol.svg);
+}
+
+/* 
+button:not(:first-child):not(:last-child){
+  imation: display_opacity_zoom 1s ease-ou
+} */
+
+button:last-child{
+   animation: display_button_next 1s ease;  
+  position: relative;
+}
+
+button:last-child img{
+  content: url(../assets/img/right-arrow-angle.svg);
+}
+
+.arrow_img{
+  width: 35px; 
+  height: 35px"
+}
+
+.hide_form{
+  display: none;
+
+}
+
+.schedule_display{
+  display: flex;
+  width: 97vw;
+  height: 80vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background: rgb(31, 137, 255);
+  justify-content: space-between;
+  align-items: flex-start;
+   animation: display_schedule .3s ease; 
+}
+
+.schedule_close{
+   animation: close_schedule .3s ease;
+  animation-fill-mode: forwards; 
+} 
+
+.close_button{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close_button :first-child{
+  margin-left: 15px;
+  margin-top: 50px;
+}
+
+.close_button span{
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.close_button span:hover{
+  cursor: pointer;
+}
+
+form{    
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25px;
+}
+
+.schedule_button_div, .schedule_time_div, .schedule_title_div, .schedule_description_div {
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+input{
+  width: 100%;
+  font-size: 22px;
+  border: 2px black solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: rgb(31, 137, 255);
+}
+.schedule_time_div{  
+  height: 15%;
+  flex-direction: row;
+}
+
+.schedule_time_div input{  
+  width: 150px;
+  height: 50px;
+}
+
+.schedule_time_div div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.schedule_button_div{
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule_button_div button{
+  animation: none;
+  font-size: 20px;
+  color: black;
+  border: 2px black solid;
+  width: 33%;
+  border-radius: 0.7rem;
+}
+
+
+@media only screen and (min-width: 1279px){
+  .title{
+    margin-top: 2%;
+  }
+  
+  .data_display{
+    margin-top: 35px;    
+    height: 70vh;
+  }
+
+  .calendar{
+    width: 97vw;
+    flex-direction: row;
+    align-items: flex-start; 
+  }
+
+  .month_days{
+    height: fit-content;
+  }
+
+  td{
+    border-radius: 0%;
+  }
+  .buttons{
+    width: 50vw;
+  }
+
+}
