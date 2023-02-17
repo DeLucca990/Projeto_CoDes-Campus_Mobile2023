@@ -14,7 +14,8 @@ body{
     display: flex;
     flex-direction: row;
     background-color:  rgb(31, 137, 255);
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 9.5rem;
 }
 
 .contato{
@@ -131,9 +132,9 @@ h2{
     flex-direction: column;
     justify-content: space-evenly;
     background-color: rgb(249, 215, 232);
-    padding-top: 11rem;
+    padding-top: 9rem;
     padding-bottom: 4rem;
-    start
+
 }
 
 .msg-resposta, .msg-usuario{
@@ -260,7 +261,8 @@ input[type="text"]
     width: 4.4rem;
     height: 4.4rem;
     border-radius: 5rem;
-    border: 0.1rem solid black;
+    border: 0.2rem solid black;
+    margin-bottom: -1.5rem;
 }
 
 footer{

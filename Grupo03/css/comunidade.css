@@ -10,7 +10,7 @@ body {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 20px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -19,6 +19,12 @@ body {
   h1 {
     font-size: 24px;
     width: 90%;
+  }
+
+  h2{
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 10px;
   }
   
   main {
@@ -38,13 +44,23 @@ body {
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 4px;
+    margin-top: 15px;
   }
-  
-  footer {
-    background-color:  rgb(31, 137, 255);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
+
+.linha_rodape{
+  display: flex;
+  flex-direction: row;
+}
+
+.img_rodape_esq{
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 0.5rem;
+}
+
+footer{
+  padding: 7.5px;
+}
   

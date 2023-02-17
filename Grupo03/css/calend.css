@@ -92,7 +92,6 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   color: white;
-  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .title {
@@ -183,7 +182,7 @@ td:hover {
   border: none;
   border-radius: 5px;
   overflow-y: scroll;
-   animation: display_data .5s ease; 
+  animation: display_data .5s ease; 
 }
 
 .data_display_item{
@@ -235,7 +234,7 @@ color: lightsalmon;
 }
 
 .today{
-  background-color: black;
+  background-color: rgb(152, 194, 245);
 }
 
 .other_month {
@@ -268,6 +267,13 @@ button {
   color: rgb(31, 137, 255);
 }
 
+.t_button{
+  color: white;
+}
+
+::placeholder{
+  color: rgba(240, 233, 233, 0.6);
+}
 
 button:hover{
   cursor: pointer;

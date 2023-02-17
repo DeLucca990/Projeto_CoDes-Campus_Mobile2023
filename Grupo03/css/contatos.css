@@ -18,6 +18,7 @@ body{
     border-radius: 0.5rem;
     border-color: black;
     margin: 0.7rem;
+    margin-bottom: 0rem;
     padding: 0.2rem;
 }
 
@@ -98,6 +99,12 @@ body{
     height: 4.18rem;
     border-radius: 5rem;
     border: 0.1rem solid black;
+    margin: 1.5%;
+}
+
+.icones_ctt{
+    width: 4.18rem;
+    height: 4.18rem;
     margin: 1.5%;
 }
 
@@ -376,4 +383,38 @@ li{
 .linha_rodape{
     display: flex;
     flex-direction: row;
+}
+
+.fixed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(249, 215, 232);
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    position: fixed;
+    width: 101%;
+    border-top: 0.2rem solid black;
+}
+
+.main_panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(249, 215, 232);
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.cabecalho{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: baseline;
+    background-color:  rgb(249, 215, 232);
+    justify-content: space-evenly;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
 }
