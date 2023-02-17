@@ -71,4 +71,14 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     })
 
+
+    const slider = document.querySelector('.slider');
+
+    slider.addEventListener('change', (event) => {
+    if (event.target.value === event.target.max) {
+        console.log('Botão deslizante chegou ao fim!');
+    } else {
+        event.target.value = 0;
+    }
+    });
 })

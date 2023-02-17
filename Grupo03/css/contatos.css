@@ -395,8 +395,8 @@ li{
     left: 0;
     height: 80px;
     position: fixed;
-    width: 101%;
-    border-top: 0.2rem solid black;
+    width: 100%;
+  /*  border-top: 0.2rem solid black; */
 }
 
 .main_panel{

@@ -6,19 +6,32 @@ body {
   }
   
   header {
-    background-color:  rgb(31, 137, 255);
+    background-color: rgb(249, 215, 232);
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
     position: fixed;
     top: 0;
     width: 100%;
   }
+  .header{
+    font-family: 'Prompt', sans-serif;
+    font-size: xx-large;
+    color: rgb(249, 215, 232);
+    display: flex;
+    justify-content: center;
+    border: #000000;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-color: black;
+    margin: 0.7rem;
+    padding: 0.2rem;
+}
   
   h1 {
     font-size: 24px;
     width: 90%;
+    background-color: rgb(31, 137, 255);
   }
 
   h2{
@@ -61,6 +74,11 @@ body {
 }
 
 footer{
-  padding: 7.5px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: rgb(249, 215, 232);
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
   
