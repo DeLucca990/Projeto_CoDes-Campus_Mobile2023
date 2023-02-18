@@ -67,6 +67,14 @@ ul {
 
 .cab1{
     font-family: 'PT Serif', serif;
+    font-size: 2rem;
+    margin: auto;
+    padding-right: 0.5rem;
+    color: rgb(0, 0, 0)
+}
+
+.cab2{
+    font-family: 'PT Serif', serif;
     font-size:x-large;
     margin: auto;
     padding-right: 0.5rem;
@@ -274,7 +282,7 @@ header {
   
   .cont-lat{
     font-family: 'PT Serif', serif;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1.1rem;
   }
   
   .img_rodape_esq_dir{

@@ -418,3 +418,7 @@ li{
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
 }
+
+.negrito{
+    font-weight: bold;
+}

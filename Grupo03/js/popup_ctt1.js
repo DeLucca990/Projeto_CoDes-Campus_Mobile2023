@@ -9,7 +9,11 @@ document.addEventListener('DOMContentLoaded', function(){
         popup.style.display='block'
     })
 
-    sim.addEventListener('click', function(){
+    const slider = document.querySelector('.slider');
+
+    slider.addEventListener('change', (event) => {
+    if (event.target.value === event.target.max) {
+        console.log('Botão deslizante chegou ao fim!');
         popup.style.display='none'
         intervalo = window.setInterval(function() {
             if (alerta.src.split('/').at(-1)==="alerta.png"){
@@ -22,11 +26,16 @@ document.addEventListener('DOMContentLoaded', function(){
         window.setTimeout(function() {
             clearInterval(intervalo)
         }, 7000)
-    })
-
-    nao.addEventListener('click', function(){
-        popup.style.display='none'
-    })
+        popup.addEventListener('click', function(event){
+            const classNameOfClickedElement=event.target.classList[0]
+            if (classNameOfClickedElement==='popup-wrapper'){
+                popup.style.display='none'
+            }
+        })
+    } else {
+        event.target.value = 0;
+    }
+    });
 
     popup.addEventListener('click', function(event){
         const classNameOfClickedElement=event.target.classList[0]

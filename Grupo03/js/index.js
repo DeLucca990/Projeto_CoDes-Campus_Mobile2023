@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
     info_paci=document.querySelector('.info_paci')
     info_tut=document.querySelector('.info_tut')
     info_ctt=document.querySelector('.info_ctt')
-    info_gerais=document.querySelectorAll('.cab')
+    info_gerais=document.querySelector('.perfil_side')
     popup=document.querySelectorAll('.popup-wrapper')
 
     info_paci.addEventListener('click', function(){
@@ -17,13 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
         popup[2].style.display='block'
     })
 
-    info_gerais[0].addEventListener('click', function(){
-        popup[3].style.display='block'
-    })
-    info_gerais[1].addEventListener('click', function(){
-        popup[3].style.display='block'
-    })
-    info_gerais[2].addEventListener('click', function(){
+    info_gerais.addEventListener('click', function(){
         popup[3].style.display='block'
     })
 
@@ -70,15 +64,4 @@ document.addEventListener('DOMContentLoaded', function(){
           overlay.classList.remove("open");
         }
     })
-
-
-    const slider = document.querySelector('.slider');
-
-    slider.addEventListener('change', (event) => {
-    if (event.target.value === event.target.max) {
-        console.log('Botão deslizante chegou ao fim!');
-    } else {
-        event.target.value = 0;
-    }
-    });
 })
