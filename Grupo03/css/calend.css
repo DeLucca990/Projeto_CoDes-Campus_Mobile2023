@@ -43,6 +43,7 @@ body {
     transform: scale3d(1, 1, 1);
   }
 }
+
 @keyframes display_button_next {
   0% {
     left: 25px;
@@ -105,7 +106,7 @@ body {
   animation: display_opacity_zoom 1s ease-out; 
 }
 
-.teste{
+.header{
   margin-top: 7%;
   height: 80px;
   width: 100%;
@@ -258,10 +259,10 @@ color: lightsalmon;
 }
 
 .buttons {
-  width: 100vw;
+  width: 100%;
   height: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -472,10 +473,4 @@ input{
   height: 4rem;
   margin-right: 0.5rem;
   
-}
-
-.rodape{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
 }
