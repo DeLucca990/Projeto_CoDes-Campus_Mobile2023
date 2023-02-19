@@ -299,33 +299,3 @@ header {
     display: flex;
     align-items: flex-start;
 }  
-
-.slider {
-    width: 12.6rem;
-    -webkit-appearance: none;
-    appearance: none;
-    background:rgb(249, 215, 232);
-    outline: none;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    margin-left: 0.5rem;
-  }
-  
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 4rem;
-    height: 4rem;
-    background: rgb(31, 137, 255);
-    cursor: pointer;
-    border-radius: 100%;
-    border: 0.35rem solid black;
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    background: rgb(31, 137, 255);
-    cursor: pointer;
-  }
-  
