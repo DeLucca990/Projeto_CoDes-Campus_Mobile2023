@@ -422,3 +422,27 @@ li{
 .negrito{
     font-weight: bold;
 }
+
+.slider {
+    width: 12.6rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background:rgb(238, 160, 163);
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-left: 0.5rem;
+    border: 0.1rem solid black;
+    border-radius: 15px;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: rgb(151, 140, 140);
+    cursor: pointer;
+    border-radius: 100%;
+    border: 0.1rem solid black;
+  }
