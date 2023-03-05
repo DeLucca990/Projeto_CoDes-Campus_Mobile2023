@@ -1,0 +1,112 @@
+*{
+    font-family: 'PT Serif', serif;
+}
+
+.accordion {
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 1rem;
+    border-width: 2.2px;
+    border-color: black;
+    margin-bottom: 0.2rem;
+  }
+
+  p{
+    line-height: 1.6;
+  }
+
+  .cursos{
+    font-family: 'Prompt', sans-serif;
+    font-size: x-large;
+    color: rgb(249, 215, 232);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(31, 137, 255);
+    border: #000000;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-color: black;
+    margin: 0.7rem;
+    padding: 0.2rem;
+  }
+
+  .div_acor{
+    padding: 15px;
+  }
+  .lista_cursos{
+    padding: 15px;
+    padding-bottom: 80px;
+  }
+
+  .desc{
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgb(31, 137, 255);
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: rgb(152, 194, 245);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 7px;
+  }
+
+  .panel_1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 18px;
+    background-color: rgb(152, 194, 245);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 1rem;
+  }
+
+  .videos{
+    margin-bottom: 1.1rem;
+  }
+  .v1{
+    margin-top: 1.1rem;
+  }
+
+  .panel_2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 18px;
+    background-color: rgb(152, 194, 245);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 1rem;
+  }
+
+  .audios{
+    margin-bottom: 1.1rem;
+  }
+  .a1{
+    margin-top: 1.1rem;
+  }

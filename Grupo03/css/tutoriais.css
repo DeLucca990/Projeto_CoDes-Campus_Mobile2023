@@ -161,18 +161,6 @@ li{
     border-right: 0.01rem;
 }
 
-.desc{
-    font-family: 'PT Serif', serif;
-    font-size: large;
-    align-self: center;
-    padding-left: 1rem;
-}
-
-.yt{
-    width: 8.5rem;
-    height: 8.5rem;
-}
-
 .img{
     width: 4rem;
     height: 4rem;
@@ -232,11 +220,15 @@ li{
     padding: 0.7rem;
 }
 
-.margem{
-    margin: 2%;
-}
-
 .linha_rodape{
+    background-color: rgb(249, 215, 232);
+    color: rgb(249, 215, 232);
     display: flex;
     flex-direction: row;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    padding-top: 5px;
 }
