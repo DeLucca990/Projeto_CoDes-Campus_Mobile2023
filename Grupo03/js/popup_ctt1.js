@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
     alerta=document.querySelector('.img_alerta')
     popup=document.querySelector('.popup-wrapper')
-    sim=document.querySelector('.popup-sim')
-    nao=document.querySelector('.popup-nao')
 
     alerta.addEventListener('click', function(){
         popup.style.display='block'

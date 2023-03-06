@@ -254,7 +254,7 @@ header {
     bottom: 0;
     width: 220px;
     background-color: rgb(152, 194, 245);
-    color: #fff;
+    color: black;
     padding: 20px;
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
@@ -298,4 +298,20 @@ header {
     height: 4rem;
     display: flex;
     align-items: flex-start;
-}  
+}
+
+.img_alerta{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-right: 0.5rem;
+}
+
+.linha_rodape{
+    display: flex;
+    flex-direction: row;
+}
+
+
